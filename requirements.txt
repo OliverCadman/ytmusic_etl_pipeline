@@ -1,0 +1,6 @@
+ytmusicapi
+boto3
+moto
+python-dotenv
+pandas
+bs4
