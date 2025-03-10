@@ -1,5 +1,5 @@
-from data_loader.load_s3 import S3Loader
-from data_loader.ytmusic_api.ytmusicapi_client import YTAPIClient
+from s3_staging.load_s3 import S3Loader
+from s3_staging.ytmusic_api.ytmusicapi_client import YTAPIClient
 from ytmusicapi import YTMusic
 
 def main():
@@ -7,7 +7,7 @@ def main():
     ytmusic_loader_client = YTAPIClient(ytmusic)
     
     loader = S3Loader(ytmusic_loader_client)
-    loader.perform_load("get_artists")
+    loader.perform_load("get_likes")
 
 
 if __name__ == "__main__":

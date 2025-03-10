@@ -1,6 +1,6 @@
 from unittest import TestCase, mock, main as unittest_main
-from data_loader.ytmusic_api.ytmusicapi_client import YTAPIClient
-from data_loader.ytmusic_api.exceptions import InvalidQueryType
+from s3_staging.ytmusic_api.ytmusicapi_client import YTAPIClient
+from s3_staging.ytmusic_api.exceptions import InvalidQueryType
 from ytmusicapi import YTMusic
 
 

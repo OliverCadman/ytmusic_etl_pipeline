@@ -4,13 +4,14 @@ from boto3 import client, resource
 from boto3.session import Session
 from botocore.exceptions import ClientError
 
-from data_loader.logging import setup_logger
-from data_loader.ytmusic_api.ytmusicapi_client import YTAPIClient
-from data_loader.ytmusic_api.exceptions import InvalidQueryType
+from s3_staging.logging import setup_logger
+from s3_staging.ytmusic_api.ytmusicapi_client import YTAPIClient
+from s3_staging.ytmusic_api.exceptions import InvalidQueryType
+
+from s3_staging.metadata.metadata_repository import MetadataRepository
 
 import datetime
 import os
-import tempfile
 
 
 logger = setup_logger(__name__, "./data_loader/logs/load_s3.log")
@@ -34,6 +35,7 @@ class S3Loader:
             aws_access_key_id=os.environ["AWS_ACCESS_KEY_ID"],
             aws_secret_access_key=os.environ["AWS_SECRET_ACCESS_KEY"]
             )
+        self.metadata = MetadataRepository()
 
     def get_and_serialize_data(self, query_type):
         logger.info(f"Getting data with query type '{query_type}'")
@@ -50,8 +52,16 @@ class S3Loader:
 
     def convert_to_json(self, obj):
         
+        if not obj:
+            raise ValueError("Argument 'obj' must be specified.")
+        
         d = {}
         d["data"] = obj
+
+        if isinstance(obj, list):
+            # Count number of items in object.
+            self.metadata.add_item(f"data_size", len(obj))
+
         return json.dumps(d)
 
     def _new_extract_required(self, dir_timestamp):
@@ -138,8 +148,6 @@ class S3Loader:
 
         json_data = self.get_and_serialize_data(query_type)
 
-        print(json_data)
-
         if json_data is None:
             logger.error(f"There was a problem loading data with the query '{query_type}'")
             return None
@@ -149,7 +157,8 @@ class S3Loader:
         res = self.s3_client.put_object(
                     Bucket=os.environ["AWS_BUCKET_NAME"],
                     Body=bytes(json_data, encoding="utf-8"),
-                    Key=object_path + f"/{query_type}.json"
+                    Key=object_path + f"/{query_type}.json",
+                    Metadata=self.metadata.metadata
                 )
         
         return res

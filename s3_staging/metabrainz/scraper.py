@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-from data_loader.metabrainz.exceptions import InvalidURL
-from data_loader.logging import setup_logger
+from s3_staging.metabrainz.exceptions import InvalidURL
+from s3_staging.logging import setup_logger
 
 
 logger = setup_logger(__name__, "./data_loader/logs/scraper.log")

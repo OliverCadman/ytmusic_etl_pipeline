@@ -2,8 +2,8 @@ import moto
 from unittest import TestCase, mock
 from botocore.exceptions import ClientError
 from ytmusicapi import YTMusic
-from data_loader.load_s3 import S3Loader
-from data_loader.ytmusic_api.ytmusicapi_client import YTAPIClient
+from s3_staging.load_s3 import S3Loader
+from s3_staging.ytmusic_api.ytmusicapi_client import YTAPIClient
 
 import json
 import datetime

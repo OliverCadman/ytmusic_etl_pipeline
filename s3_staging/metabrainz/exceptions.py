@@ -1,4 +1,4 @@
-from data_loader.common.exceptions import RequestException
+from s3_staging.common.exceptions import RequestException
 
 
 class InvalidURL(RequestException):

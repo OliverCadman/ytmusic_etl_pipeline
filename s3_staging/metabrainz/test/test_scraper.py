@@ -2,9 +2,9 @@ from unittest import TestCase
 
 from requests import Response
 
-from data_loader.metabrainz.scraper import MetaBrainzScraper
-from data_loader.metabrainz.constants import BASE_URL, JSON_DATA_URL
-from data_loader.metabrainz.exceptions import InvalidURL
+from s3_staging.metabrainz.scraper import MetaBrainzScraper
+from s3_staging.metabrainz.constants import BASE_URL, JSON_DATA_URL
+from s3_staging.metabrainz.exceptions import InvalidURL
 
 
 class MetaBrainzScraperTests(TestCase):

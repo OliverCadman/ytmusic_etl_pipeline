@@ -1,0 +1,96 @@
+2025-03-01 23:37:40,673 INFO Getting data with query type 'history'
+2025-03-01 23:37:41,620 INFO Request with query type 'history' successful.
+2025-03-01 23:38:43,044 ERROR An error occurred (MalformedXML) when calling the CreateBucket operation: The XML you provided was not well-formed or did not validate against our published schema
+2025-03-01 23:38:43,044 INFO Getting data with query type 'history'
+2025-03-01 23:38:43,930 INFO Request with query type 'history' successful.
+2025-03-01 23:39:54,245 ERROR An error occurred (IllegalLocationConstraintException) when calling the CreateBucket operation: The unspecified location constraint is incompatible for the region specific endpoint this request was sent to.
+2025-03-01 23:39:54,246 INFO Getting data with query type 'history'
+2025-03-01 23:39:55,155 INFO Request with query type 'history' successful.
+2025-03-01 23:51:17,788 ERROR An error occurred (MalformedXML) when calling the CreateBucket operation: The XML you provided was not well-formed or did not validate against our published schema
+2025-03-01 23:51:17,788 INFO Getting data with query type 'history'
+2025-03-01 23:51:18,724 INFO Request with query type 'history' successful.
+2025-03-01 23:52:42,633 ERROR An error occurred (MalformedXML) when calling the CreateBucket operation: The XML you provided was not well-formed or did not validate against our published schema
+2025-03-01 23:52:42,634 INFO Getting data with query type 'history'
+2025-03-01 23:52:43,538 INFO Request with query type 'history' successful.
+2025-03-01 23:53:22,213 ERROR An error occurred (IllegalLocationConstraintException) when calling the CreateBucket operation: The unspecified location constraint is incompatible for the region specific endpoint this request was sent to.
+2025-03-01 23:53:22,214 INFO Getting data with query type 'history'
+2025-03-01 23:53:23,062 INFO Request with query type 'history' successful.
+2025-03-01 23:59:45,530 ERROR An error occurred (InvalidBucketName) when calling the CreateBucket operation: The specified bucket is not valid.
+2025-03-01 23:59:45,531 INFO Getting data with query type 'history'
+2025-03-01 23:59:46,454 INFO Request with query type 'history' successful.
+2025-03-02 00:00:19,677 ERROR An error occurred (InvalidBucketName) when calling the CreateBucket operation: The specified bucket is not valid.
+2025-03-02 00:00:19,677 INFO Getting data with query type 'history'
+2025-03-02 00:00:20,641 INFO Request with query type 'history' successful.
+2025-03-02 00:00:48,770 ERROR An error occurred (InvalidBucketName) when calling the CreateBucket operation: The specified bucket is not valid.
+2025-03-02 00:00:48,770 INFO Getting data with query type 'history'
+2025-03-02 00:00:49,741 INFO Request with query type 'history' successful.
+2025-03-02 00:02:42,818 ERROR An error occurred (InvalidBucketName) when calling the CreateBucket operation: The specified bucket is not valid.
+2025-03-02 00:02:42,819 INFO Getting data with query type 'history'
+2025-03-02 00:02:43,714 INFO Request with query type 'history' successful.
+2025-03-02 00:03:09,871 ERROR An error occurred (InvalidBucketName) when calling the CreateBucket operation: The specified bucket is not valid.
+2025-03-02 00:03:09,871 INFO Getting data with query type 'history'
+2025-03-02 00:03:10,849 INFO Request with query type 'history' successful.
+2025-03-02 00:04:19,001 INFO Created bucket with name 'ytmusic-etl-staging-bucket'
+2025-03-02 00:04:19,002 INFO Getting data with query type 'history'
+2025-03-02 00:04:20,996 INFO Request with query type 'history' successful.
+2025-03-02 09:17:51,428 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-02 09:17:51,429 INFO Getting data with query type 'history'
+2025-03-02 09:17:52,732 INFO Request with query type 'history' successful.
+2025-03-02 10:09:41,111 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-02 10:09:41,112 INFO Getting data with query type 'artists'
+2025-03-02 10:09:41,112 ERROR Error handling query type. Full error message: Request with param 'artists' not supported. Available params are 'get_artists, get_likes, history'
+2025-03-02 10:09:41,112 ERROR There was a problem loading data with the query 'artists'
+2025-03-02 10:10:06,744 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-02 10:10:06,744 INFO Getting data with query type 'get_artists'
+2025-03-02 10:10:07,044 INFO Request with query type 'get_artists' successful.
+2025-03-02 18:10:26,772 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-02 18:10:26,773 INFO Getting data with query type 'get_artists'
+2025-03-02 18:10:27,279 INFO Request with query type 'get_artists' successful.
+2025-03-02 18:20:32,261 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-02 18:20:32,261 INFO Getting data with query type 'get_artists'
+2025-03-02 18:20:34,446 INFO Request with query type 'get_artists' successful.
+2025-03-02 18:20:54,044 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-02 18:20:54,045 INFO Getting data with query type 'get_artists'
+2025-03-02 18:20:56,120 INFO Request with query type 'get_artists' successful.
+2025-03-02 18:25:28,392 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-02 18:25:28,393 INFO Getting data with query type 'get_artists'
+2025-03-02 18:25:30,460 INFO Request with query type 'get_artists' successful.
+2025-03-03 13:10:40,006 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-03 13:10:40,006 INFO Getting data with query type 'get_artists'
+2025-03-03 13:10:41,772 INFO Request with query type 'get_artists' successful.
+2025-03-03 13:11:03,238 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-03 13:11:03,239 INFO Getting data with query type 'get_artists'
+2025-03-03 13:11:04,819 INFO Request with query type 'get_artists' successful.
+2025-03-03 13:14:10,777 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-03 13:14:10,777 INFO Getting data with query type 'get_artists'
+2025-03-03 13:14:12,435 INFO Request with query type 'get_artists' successful.
+2025-03-03 13:15:50,056 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-03 13:15:50,057 INFO Getting data with query type 'get_artists'
+2025-03-03 13:15:51,752 INFO Request with query type 'get_artists' successful.
+2025-03-04 10:13:31,291 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-04 10:13:31,292 INFO Getting data with query type 'get_artists'
+2025-03-04 10:13:33,235 INFO Request with query type 'get_artists' successful.
+2025-03-07 11:18:35,762 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-07 11:18:35,763 INFO Getting data with query type 'get_artists'
+2025-03-07 11:18:38,153 INFO Request with query type 'get_artists' successful.
+2025-03-07 11:36:28,210 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-07 11:36:28,211 INFO Getting data with query type 'history'
+2025-03-07 11:36:28,211 ERROR There was a problem loading data with the query 'history'
+2025-03-07 11:38:31,570 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-07 11:38:31,571 INFO Getting data with query type 'history'
+2025-03-07 11:38:31,571 ERROR There was a problem loading data with the query 'history'
+2025-03-07 11:41:33,726 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-07 11:41:33,726 INFO Getting data with query type 'history'
+2025-03-07 11:41:33,727 ERROR There was a problem loading data with the query 'history'
+2025-03-07 11:42:33,442 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-07 11:42:33,442 INFO Getting data with query type 'history'
+2025-03-07 11:42:35,037 INFO Request with query type 'history' successful.
+2025-03-07 11:44:39,621 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-07 11:44:39,623 INFO Getting data with query type 'history'
+2025-03-07 11:44:41,284 INFO Request with query type 'history' successful.
+2025-03-07 11:44:49,657 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-07 11:44:49,657 INFO Getting data with query type 'history'
+2025-03-07 11:44:50,844 INFO Request with query type 'history' successful.
+2025-03-07 11:45:31,187 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-07 11:45:31,187 INFO Getting data with query type 'get_likes'
+2025-03-07 11:45:40,179 INFO Request with query type 'get_likes' successful.

@@ -1,6 +1,6 @@
 from ytmusicapi import YTMusic
-from data_loader.ytmusic_api.enums import QueryTypes
-from data_loader.ytmusic_api.exceptions import InvalidQueryType
+from s3_staging.ytmusic_api.enums import QueryTypes
+from s3_staging.ytmusic_api.exceptions import InvalidQueryType
 
 class YTAPIClient:
     def __init__(self, ytmusic_api: YTMusic):
@@ -30,4 +30,6 @@ class YTAPIClient:
         Public factory method, delegating query type
         to the associated method provided by YTMusic API.
         """
+        if query_type == QueryTypes.HISTORY.value:
+            return self.query_to_method(query_type)()
         return self.query_to_method(query_type)(limit=None)
