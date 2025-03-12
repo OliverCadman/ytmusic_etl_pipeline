@@ -1,6 +1,6 @@
-from s3_staging.ytmusic_api.enums import QueryTypes
+from ytmusic_api.enums import QueryTypes
 
-from s3_staging.common.exceptions import RequestException
+from common.exceptions import RequestException
 
 class InvalidQueryType(RequestException):
     """

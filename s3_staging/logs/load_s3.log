@@ -94,3 +94,6 @@
 2025-03-07 11:45:31,187 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
 2025-03-07 11:45:31,187 INFO Getting data with query type 'get_likes'
 2025-03-07 11:45:40,179 INFO Request with query type 'get_likes' successful.
+2025-03-11 08:59:06,757 ERROR An error occurred (BucketAlreadyOwnedByYou) when calling the CreateBucket operation: Your previous request to create the named bucket succeeded and you already own it.
+2025-03-11 08:59:06,758 INFO Getting data with query type 'history'
+2025-03-11 08:59:07,894 INFO Request with query type 'history' successful.

@@ -4,17 +4,17 @@ from boto3 import client, resource
 from boto3.session import Session
 from botocore.exceptions import ClientError
 
-from s3_staging.logging import setup_logger
-from s3_staging.ytmusic_api.ytmusicapi_client import YTAPIClient
-from s3_staging.ytmusic_api.exceptions import InvalidQueryType
+from logging_service import setup_logger
+from ytmusic_api.ytmusicapi_client import YTAPIClient
+from ytmusic_api.exceptions import InvalidQueryType
 
-from s3_staging.metadata.metadata_repository import MetadataRepository
+from metadata.metadata_repository import MetadataRepository
 
 import datetime
 import os
 
 
-logger = setup_logger(__name__, "./data_loader/logs/load_s3.log")
+logger = setup_logger(__name__, os.getcwd() + "/logs/load_s3.log")
 
 # Prime with env variables used for AWS S3 interaction.
 dotenv.load_dotenv(override=True)

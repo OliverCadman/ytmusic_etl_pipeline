@@ -13,6 +13,9 @@ services:
       retries: 3
     volumes:
       - ./pipeline:/opt/spark/pipeline
+      - ./s3_client:/opt/spark/s3_client
+      - ./logs:/opt/spark/logs
+      - ../logging_service:/opt/spark/logging_service
       - spark-logs:/opt/spark/spark-events
     env_file:
       - .env.spark
@@ -20,6 +23,7 @@ services:
       - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
       - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
       - AWS_REGION_NAME=${AWS_REGION_NAME}
+      - AWS_BUCKET_NAME=${AWS_BUCKET_NAME}
     ports:
       - '9090:8080'
       - '7077:7077'
@@ -33,6 +37,9 @@ services:
       - .env.spark
     volumes:
       - ./pipeline:/opt/spark/pipeline
+      - ./s3_client:/opt/spark/s3_client
+      - ./logs:/opt/spark/logs
+      - ../logging_service:/opt/spark/logging_service
       - spark-logs:/opt/spark/spark-events
     ports:
       - '18080:18080'
